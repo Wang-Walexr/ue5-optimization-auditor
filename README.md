@@ -6,6 +6,8 @@ An Editor Utility Widget for Unreal Engine 5.7 that audits scenes
 and assets for common performance issues, with platform-aware 
 thresholds and automated fixes where safe.
 
+See [SPEC.md](SPEC.md) for the full design specification.
+
 ## Planned Features
 
 - Scene Audit — instancing opportunities, draw call cost, 
