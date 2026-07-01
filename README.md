@@ -25,7 +25,7 @@ See [SPEC.md](SPEC.md) for the full design specification.
 - [x] Platform preset system with editable thresholds
 - [x] Reusable result row widget with severity color coding
 - [ ] Scene Audit logic
-- [ ] Asset Audit logic
+- [x] Asset Audit logic
 - [ ] Fix operations
 - [ ] Demo video
 

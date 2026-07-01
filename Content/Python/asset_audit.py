@@ -67,12 +67,10 @@ def run_asset_audit(folder, max_texture_size = 2048, lod_triangle_threshold = 50
                     "issue": f"LODs present ({lod_count})",
                     "severity": "PASS",
                     "fix_type": "NONE",
-                    "fix_function": ""
+                    "fix_function": " "
                 })
 
-            #print(lod_count)
-            #print(triangle_count)
-            #print(asset_type, asset_name, asset_path)
+
 
 
         # Textures
@@ -94,10 +92,10 @@ def run_asset_audit(folder, max_texture_size = 2048, lod_triangle_threshold = 50
                     "issue": f"{texture_width}x{texture_height}, exceeds {max_texture_size}px limit",
                     "severity": severity,
                     "fix_type": "MANUAL",
-                    "fix_function": ""
+                    "fix_function": " "
                 })
 
-            #print(texture_width, texture_height)
+
 
     return results
 
@@ -114,7 +112,7 @@ def format_results_for_blueprint(results):
         :param results: (list) List of results from the scans
 
     Return
-        :return: (str)
+        :return: (str) List results joined into a string
     """
 
     row_result = []
@@ -125,8 +123,6 @@ def format_results_for_blueprint(results):
 
     return "\n".join(row_result)
 
-#re = run_asset_audit("/Game/Assets")
 
-#print(format_results_for_blueprint(re))
 
 
