@@ -3,6 +3,8 @@ Build/
 DerivedDataCache/
 Intermediate/
 Saved/
+Content/Assets/
+Content/Fab/
 *.VC.db
 *.opensdf
 *.opendb
