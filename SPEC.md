@@ -160,6 +160,7 @@ Scans the current open level for performance issues.
 - Flag if count exceeds 20 (INFO) or 50 (WARNING)
 - Fix type: MANUAL. Recommend VFX budget review
 - Severity: INFO / WARNING
+- Note: Particle count is INFO-level only because count alone doesn't correlate reliably with performance cost. Flagging it as actionable would overstate the tool's certainty.
 
 ---
 
@@ -233,6 +234,14 @@ No popup confirmation dialog. The results panel itself
 serves as the confirmation. What is shown is what will be fixed.
 MANUAL items are visually distinct so there is no ambiguity
 about what the tool will and won't change automatically.
+
+## Fix Distribution
+
+Most auto-fixable issues come from Asset Audit (technical, reversible
+problems). Most Scene Audit findings are MANUAL by design — instancing,
+material slot reduction, and lighting mobility all involve tradeoffs
+that require artist or TA judgment and cannot be safely automated
+without risking unintended visual or gameplay changes.
 
 ---
 

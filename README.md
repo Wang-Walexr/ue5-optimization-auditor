@@ -24,8 +24,8 @@ See [SPEC.md](SPEC.md) for the full design specification.
 - [x] Full UI shell built (Editor Utility Widget)
 - [x] Platform preset system with editable thresholds
 - [x] Reusable result row widget with severity color coding
-- [ ] Scene Audit logic
-- [x] Asset Audit logic
+- [x] Scene Audit logic
+- [x] Asset Audit logic (Nanite/LOD, texture size, sRGB, mipmaps)
 - [ ] Fix operations
 - [ ] Demo video
 
@@ -43,6 +43,17 @@ See [SPEC.md](SPEC.md) for the full design specification.
    repo into your project's Content folder
 2. Reopen your project in Unreal
 3. Right click `EUW_OptimizationAuditor` → Run Editor Utility Widget
+
+## Testing the Tool
+
+This repo does not include sample test assets due to third-party 
+licensing. To test the tool yourself:
+
+1. Import any Static Mesh assets into your project
+2. Place multiple copies of the same mesh in a level (uninstanced)
+3. Add several dynamic lights
+4. Run Scene Audit and Asset Audit to see the tool flag issues
+
 
 ## Requirements
 - Unreal Engine 5.7+

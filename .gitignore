@@ -3,7 +3,9 @@ Build/
 DerivedDataCache/
 Intermediate/
 Saved/
+Content/Scenes/
 Content/Assets/
+Content/FXs/
 Content/Fab/
 *.VC.db
 *.opensdf
