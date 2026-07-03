@@ -254,6 +254,15 @@ without risking unintended visual or gameplay changes.
 | Wrong sRGB | Set correct value | Texture2D.set_editor_property('srgb') |
 | Missing mipmaps | Enable mip generation | Texture2D.set_editor_property('mip_gen_settings') |
 
+
+## Design Note: No Auto Re-Scan After Fix
+
+Fixes do not automatically trigger a re-scan. Scanning large projects
+can be expensive, and the fix loop already reports success/failure per
+item plus a summary count. Re-scanning is left as a deliberate, artist-
+triggered action to avoid forcing an expensive operation the artist may
+not need immediately.
+
 ---
 
 ## Recommendation Only (MANUAL)

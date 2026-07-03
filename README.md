@@ -1,6 +1,6 @@
 # UE5 Optimization Auditor
 
-**Status:** Work in progress (UI complete, audit logic in development)
+**Status:** Feature complete: demo video and final polish in progress
 
 An Editor Utility Widget for Unreal Engine 5.7 that audits scenes 
 and assets for common performance issues, with platform-aware 
@@ -26,7 +26,8 @@ See [SPEC.md](SPEC.md) for the full design specification.
 - [x] Reusable result row widget with severity color coding
 - [x] Scene Audit logic
 - [x] Asset Audit logic (Nanite/LOD, texture size, sRGB, mipmaps)
-- [ ] Fix operations
+- [x] Fix operations (generate_lods, enable_nanite, fix_srgb_off, enable_mipmaps)
+- [x] Fix Selected and Fix All wired and tested
 - [ ] Demo video
 
 ## Installation
